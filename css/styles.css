@@ -48,3 +48,11 @@ body {
     width: 44%;
 
 }
+
+.bodybio {
+    background-image: url(../img/fondbio2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+
