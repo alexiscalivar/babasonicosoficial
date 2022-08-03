@@ -1,58 +1,51 @@
-
-
 body {
-    background: #e9ecf4;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
+  background: #e9ecf4;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .footer {
-
-    margin-top: auto;
+  margin-top: auto;
 }
-
 
 .cardd {
-    border-radius: 10px;
-	min-height: 400px;
-	font-weight: bold;
-	padding: 20px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    width: 30%;
-
+  border-radius: 10px;
+  min-height: 400px;
+  font-weight: bold;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 30%;
 }
 
-.contenido .contconcert {    
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-
+.contenido .contconcert {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
+
 .card {
-	border-radius: 10px;
-	min-height: 200px;
-	font-weight: bold;
-	padding: 20px;
-	position: relative;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center center;	
-    display: flex;
-    width: 44%;
-
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  width: 44%;
 }
 
 .bodybio {
-    background-image: url(../img/fondbio2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-	
+  background-image: url(../img/fondbio2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+/*# sourceMappingURL=styles.css.map */
