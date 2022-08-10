@@ -11,9 +11,9 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">BABASONICOS</a>
+        <a class="navbar-brand" href="../index.html">BABASONICOS</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,76 +50,78 @@
     </nav>
 </header>
 
-<section class="container contenido ">
-  <h1 class="titulo01">
-      Contacto
-  </h1>
-  <form>
-      <fieldset>
+<div class="contact_form">
+
+  <div class="container-fluid formulario text-dark text-center mt-4 mb-4">      
+    <h1>¡Contactá con nosotros!</h1>
+      <h3>Responderemos a la brevedad</h3>
+
+
+        <form action="submeter-formulario.php" method="post">       
+
           
-          <legend>
-              ¡Contactá con nosotros!
-          </legend>
+              <p>
+                <label for="nombre" class="colocar_nombre">Nombre
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+              </p>
+            
+              <p>
+                <label for="email" class="colocar_email">Email
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+              </p>
+          
+              <p>
+                <label for="telefone" class="colocar_telefono">Teléfono
+                </label>
+                  <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+              </p>      
+            
+              <p>
+                <label for="asunto" class="colocar_asunto">Asunto
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+              </p>    
+            
+              <p>
+                <label for="mensaje" class="colocar_mensaje">Mensaje
+                  <span class="obligatorio">*</span>
+                </label>                     
+                                  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                              </p>                    
+            
+              <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
 
-          <div>
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" placeholder="Ingresá tu nombre" required>
-          </div>
+              <p class="aviso">
+                <span class="obligatorio"> * </span>los campos son obligatorios.
+              </p>          
+          
+        </form>
+  </div>  
+</div>
 
-          <div>
-              <label for="apellido">Apellido</label>
-              <input type="text" id="apellido" placeholder="Ingresá tu apellido" required>
-          </div>
-
-          <div>
-              <label for="correo">Email</label>
-              <input type="email" id="correo" placeholder="Ingresá tu Email"required>
-          </div>
-
-          <div>
-              <label for="asunto">Asunto</label>
-              <input type="email" id="asunto" placeholder="Asunto"required>
-          </div>
-
-          <div>
-              <label for="mensaje">Mensaje</label>
-              <input type="" id="mensaje" placeholder="Mensaje"required>
-          </div>
-
-          <div>
-              <p> ¿Aceptas los terminos y condiciones?</p>
-
-              <label for="si">Si</label>
-              <input type="radio" name="condiciones" id="si">
-
-              <label for="no">No</label>
-              <input type="radio" name="condiciones" id="no">
-          </div>
-
-          <div>
-              <input type="submit" value="Enviar">
-          </div>  
-      </fieldset>
-  </form>   
-</section>
 
 <footer class="footer">
-  <div class="bg-light d-flex justify-content-center" >
-    <ul class=" list-unstyled mt-3 ">
+  <div class="container-fluid d-flex justify-content-center align-items-center" >
+    <ul class="mt-2 mb-2">
        <a href="https://www.youtube.com/channel/UCHkjiWuPvw76K3W4ufeuYCg" target="_blank">
-           <img class="mw-100" src="../img/youtube-brands.svg" alt="" width="30px" height="40px">
+           <img class="mw-100" src="../img/youtube-brands.svg" alt="" width="25px" height="25px">
        </a>
 
        <a href="https://open.spotify.com/artist/2F9pvj94b52wGKs0OqiNi2"target="_blank">
-           <img class="iconfooters" src="../img/spotify-brands.svg" alt="" width="30px" height="40px">
+           <img class="iconfooters" src="../img/spotify-brands.svg" alt="" width="25px" height="25px">
        </a>
            
        <a href="https://www.instagram.com/accounts/login/?next=/babasonicos/"target="_blank">
-           <img class="iconfooters" src="../img/instagram-brands.svg" alt="" width="30px" height="40px">
+           <img class="iconfooters" src="../img/instagram-brands.svg" alt="" width="25px" height="25px">
        </a>
              
        <a href="https://twitter.com/babasonicos?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="_blank">
-           <img class="iconfooters" src="../img/twitter-brands.svg" alt="" width="30px" height="40px">
+           <img class="iconfooters" src="../img/twitter-brands.svg" alt="" width="25px" height="25px">
        </a>           
     </ul>  
   </div>

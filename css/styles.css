@@ -1,19 +1,18 @@
 body {
-  background: #e9ecf4;
-  color: #000;
+  background: #111;
+  color: white;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.footer {
-  margin-top: auto;
+header {
+  background-color: #f39bb3;
 }
 
-.bodybio {
-  background-image: url(../img/fondbio2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.footer {
+  margin-top: auto;
+  background-color: #f39bb3;
 }
 
 /*tour*/
@@ -26,21 +25,43 @@ body {
 }
 
 .card {
+  display: flex;
   border-radius: 5px;
-  min-height: 300px;
-  font-weight: bold;
-  padding: 20px;
-  position: relative;
+  min-height: 250px;
+  min-width: 420px;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  display: flex;
-  width: 44%;
 }
-
-.card, h3 p {
+.card:hover .tourport {
+  opacity: 1;
+  color: #f39bb3;
+}
+.card .tourport {
+  display: flex;
+  border-radius: 5px;
+  min-height: 250px;
+  min-width: 420px;
+  font-weight: bold;
+  text-decoration: none;
+  background-position: center center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0.9;
+  transition: 0.5s;
+}
+.card h3 p {
   color: white;
   justify-content: end;
+}
+
+@media screen and (max-width: 480px) {
+  .card .tourport {
+    min-width: 250px;
+    min-height: 300px;
+  }
 }
 
 /*discografia*/
@@ -54,8 +75,10 @@ body {
   background-position: center;
   overflow: hidden;
 }
-
-.album {
+.cardd:hover .album {
+  opacity: 1;
+}
+.cardd .album {
   display: flex;
   border-radius: 10px;
   min-height: 350px;
@@ -67,13 +90,105 @@ body {
   opacity: 0;
   transition: 0.5s;
 }
-
-.album, h2 li {
-  color: rgba(255, 255, 255, 0.9);
+.cardd h1 li {
+  color: white !important;
+  text-decoration: none;
 }
 
-.cardd:hover .album {
-  opacity: 1;
+.navbar-brand {
+  font-size: 1.5rem;
+  font-family: Helvetica, sans-serif;
+}
+
+/*contacto*/
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  background-color: #fbfbfb;
+}
+.contact_form input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f39bb3;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.contact_form textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f39bb3;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #f39bb3;
+  border-color: #f39bb3;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+button p {
+  color: black;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid black;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid black;
+}
+
+.iframeindex {
+  width: 470px;
+  height: 295px;
+}
+@media screen and (max-width: 480px) {
+  .iframeindex {
+    width: 310px;
+    height: 210px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
