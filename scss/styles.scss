@@ -6,14 +6,21 @@ body {
   min-height: 100vh;
 }
 
+$colors: (
+  "rosita": #f39bb3,
+  "grisesito": #a8a8a8,
+
+);
+
 header {
-  background-color: #f39bb3;
+  background-color: map-get($colors, "rosita");
   
 }
 
 .footer {
+  @extend header;
   margin-top: auto;
-  background-color: #f39bb3;
+
   
 }
 
@@ -39,7 +46,7 @@ header {
 
   &:hover .tourport  {
     opacity: 1;
-    color: #f39bb3; 
+    color: map-get($colors, "rosita"); 
   }
 
   .tourport {
@@ -136,7 +143,7 @@ header {
       border-radius: 5px;  
       border-style: solid; 
       border-width: 1px; 
-      border-color: #f39bb3; 
+      border-color: map-get($colors, "rosita"); 
       margin-top: 10px;  
       padding-left: 10px;
       margin-bottom: 20px; 
@@ -148,7 +155,7 @@ header {
       border-radius: 5px;  
       border-style: solid; 
       border-width: 1px; 
-      border-color: #f39bb3; 
+      border-color: map-get($colors, "rosita"); 
       margin-top: 10px;  
       padding-left: 10px;
       margin-bottom: 20px; 
@@ -170,8 +177,8 @@ button{
   margin-bottom: 20px; 
   margin-top: 10px;   
   text-transform: uppercase;
-  background-color: #f39bb3; 
-  border-color: #f39bb3; 
+  background-color: map-get($colors, "rosita");
+  border-color: map-get($colors, "rosita"); 
   border-style: solid; 
   border-radius: 10px;  
   width: 420px;   
@@ -186,12 +193,12 @@ button{
   color: #0e0e0e;  
 }
 ::-webkit-input-placeholder {
- color: #a8a8a8;
+ color: map-get($colors, "grisesito");
 }
 
 
 ::-webkit-textarea-placeholder {
- color: #a8a8a8;
+ color:map-get($colors, "grisesito");
 }
 
 
@@ -221,3 +228,9 @@ button{
   height: 210px;
   }
 } 
+
+
+
+
+
+

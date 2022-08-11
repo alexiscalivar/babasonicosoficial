@@ -6,13 +6,12 @@ body {
   min-height: 100vh;
 }
 
-header {
+header, .footer {
   background-color: #f39bb3;
 }
 
 .footer {
   margin-top: auto;
-  background-color: #f39bb3;
 }
 
 /*tour*/
