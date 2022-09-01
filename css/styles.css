@@ -14,6 +14,12 @@ header, .footer {
   margin-top: auto;
 }
 
+.iconfooters {
+  margin: 2px;
+  width: 25px;
+  height: 25px;
+}
+
 /*tour*/
 .contenido .contconcert {
   width: 100%;
@@ -23,27 +29,32 @@ header, .footer {
   justify-content: center;
 }
 
-.card {
+.cards {
   display: flex;
   border-radius: 5px;
   min-height: 250px;
-  min-width: 420px;
+  min-width: 330px;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
 }
-.card:hover .tourport {
+@media screen and (min-width: 480px) {
+  .cards {
+    min-height: 300px;
+    min-width: 450px;
+  }
+}
+.cards:hover .tourport {
   opacity: 1;
   color: #f39bb3;
 }
-.card .tourport {
+.cards .tourport {
   display: flex;
   border-radius: 5px;
   min-height: 250px;
-  min-width: 420px;
+  min-width: 330px;
   font-weight: bold;
   text-decoration: none;
-  background-position: center center;
   flex-direction: column;
   align-items: center;
   justify-content: end;
@@ -51,16 +62,15 @@ header, .footer {
   opacity: 0.9;
   transition: 0.5s;
 }
-.card h3 p {
+@media screen and (min-width: 480px) {
+  .cards .tourport {
+    min-height: 300px;
+    min-width: 450px;
+  }
+}
+.cards h3 p {
   color: white;
   justify-content: end;
-}
-
-@media screen and (max-width: 480px) {
-  .card .tourport {
-    min-width: 250px;
-    min-height: 300px;
-  }
 }
 
 /*discografia*/
@@ -107,6 +117,11 @@ header, .footer {
   border-radius: 10px;
   background-color: #fbfbfb;
 }
+@media screen and (max-width: 480px) {
+  .contact_form {
+    width: 340px;
+  }
+}
 .contact_form input {
   background-color: #fbfbfb;
   width: 408px;
@@ -118,6 +133,11 @@ header, .footer {
   margin-top: 10px;
   padding-left: 10px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  .contact_form input {
+    width: 300px;
+  }
 }
 .contact_form textarea {
   background-color: #fbfbfb;
@@ -132,13 +152,18 @@ header, .footer {
   margin-bottom: 20px;
   padding-top: 15px;
 }
+@media screen and (max-width: 480px) {
+  .contact_form textarea {
+    width: 300px;
+  }
+}
 
 label {
   display: block;
   float: center;
 }
 
-button {
+.botonform {
   height: 45px;
   padding-left: 5px;
   padding-right: 5px;
@@ -152,8 +177,13 @@ button {
   width: 420px;
   cursor: pointer;
 }
-button p {
+.botonform p {
   color: black;
+}
+@media screen and (max-width: 480px) {
+  .botonform {
+    width: 300px;
+  }
 }
 
 .aviso {
@@ -187,6 +217,20 @@ button p {
   .iframeindex {
     width: 310px;
     height: 210px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fondobio {
+    width: 340px;
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fondobio {
+    width: 340px;
+    height: 240px;
   }
 }
 

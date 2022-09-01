@@ -12,6 +12,19 @@ $colors: (
 
 );
 
+@mixin mob (){
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin deskt (){
+  @media screen and (min-width: 480px) {
+    @content;    
+  }
+}
+
+
 header {
   background-color: map-get($colors, "rosita");
   
@@ -21,10 +34,23 @@ header {
   @extend header;
   margin-top: auto;
 
-  
 }
 
+
+.iconfooters {
+  margin: 2px;
+  width: 25px;
+  height: 25px;
+
+}
+
+
 /*tour*/
+
+
+
+
+
 .contenido .contconcert {
   width: 100%;
   display: flex;
@@ -33,36 +59,50 @@ header {
   justify-content: center;
 }
 
-.card {
+.cards {
   display: flex;
   border-radius: 5px;
   min-height: 250px;
-  min-width: 420px;
+  min-width: 330px;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
+
+  @include deskt(){
+    min-height: 300px;
+    min-width: 450px;
+   
+    }
   
   
 
   &:hover .tourport  {
     opacity: 1;
     color: map-get($colors, "rosita"); 
+
+    
   }
 
   .tourport {
     display: flex;
     border-radius: 5px;
     min-height: 250px;
-    min-width: 420px; 
+    min-width: 330px; 
     font-weight: bold;
     text-decoration: none;
-    background-position: center center;
+    
     flex-direction: column;
     align-items: center;
     justify-content: end;
     background: rgba(0, 0, 0, 0.4);
     opacity: .9;
     transition: 0.5s;
+
+    
+      @include deskt(){
+        min-height: 300px;
+        min-width: 450px;
+        }
     
   }
 
@@ -70,22 +110,9 @@ header {
     color: white;
     justify-content: end;
   }
+
+
 }
-
-@mixin cardt (){
-  @media screen and (max-width: 480px) {
-    @content;
-  }
-}
-
-.card .tourport{
-  @include cardt(){
-  min-width: 250px;
-  min-height: 300px;
-  }
-} 
-
-
 
 /*discografia*/
 .cardd {
@@ -99,6 +126,7 @@ header {
   overflow: hidden;
 
    &:hover .album {opacity: 1;}
+   
 
   .album {
     display: flex;
@@ -133,7 +161,11 @@ header {
   height: auto;
   margin: 80px auto;
   border-radius: 10px;  
-  background-color: #fbfbfb;  
+  background-color: #fbfbfb;
+  
+  @include mob(){
+    width: 340px;
+    }
 
 
     input{
@@ -147,6 +179,10 @@ header {
       margin-top: 10px;  
       padding-left: 10px;
       margin-bottom: 20px; 
+
+      @include mob(){
+        width: 300px;
+        }
     }
     textarea{
       background-color: #fbfbfb; 
@@ -160,6 +196,10 @@ header {
       padding-left: 10px;
       margin-bottom: 20px; 
       padding-top: 15px; 
+
+      @include mob(){
+        width: 300px;
+        }
     }
   }
 
@@ -170,7 +210,7 @@ label{
   float: center;  
 }
 
-button{
+.botonform{
   height: 45px; 
   padding-left: 5px;
   padding-right: 5px;   
@@ -186,6 +226,10 @@ button{
 
      p{
        color: black;}
+
+       @include mob(){
+        width: 300px;
+        }
 }
 
 .aviso{
@@ -211,13 +255,8 @@ button{
 .formulario textarea:focus{
   outline:0;
   border: 1px solid black;
-}
+} 
 
-@mixin mob (){
-  @media screen and (max-width: 480px) {
-    @content;
-  }
-}
 
 .iframeindex{
   width: 470px;
@@ -230,7 +269,25 @@ button{
 } 
 
 
+.fondobio{
+ 
+    @include mob(){
+    width: 340px;
+    height: 240px;
+    }
+  } 
+  
+
+  .fondobio{
+ 
+    @include mob(){
+    width: 340px;
+    height: 240px;
+    }
+  } 
+  
 
 
 
 
+ 

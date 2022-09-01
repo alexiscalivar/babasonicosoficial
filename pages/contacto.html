@@ -52,16 +52,11 @@
     </nav>
 </header>
 
-<div class="contact_form">
-
+<div class=" container contact_form">
   <div class="container-fluid formulario text-dark text-center mt-4 mb-4">      
     <h1>¡Contactá con nosotros!</h1>
-      <h3>Responderemos a la brevedad</h3>
-
-
-        <form action="submeter-formulario.php" method="post">       
-
-          
+      <h2>Responderemos a la brevedad</h2>
+        <form action="submeter-formulario.php" method="post">             
               <p>
                 <label for="nombre" class="colocar_nombre">Nombre
                   <span class="obligatorio">*</span>
@@ -96,7 +91,7 @@
                                   <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
                               </p>                    
             
-              <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+              <button class= "botonform" type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
 
               <p class="aviso">
                 <span class="obligatorio"> * </span>los campos son obligatorios.
@@ -108,23 +103,34 @@
 
 
 <footer class="footer">
-  <div class="container-fluid d-flex justify-content-center align-items-center" >
-    <ul class="mt-2 mb-2">
-       <a href="https://www.youtube.com/channel/UCHkjiWuPvw76K3W4ufeuYCg" target="_blank">
-           <img class="mw-100" src="../img/youtube-brands.svg" alt="" width="25px" height="25px">
-       </a>
-
-       <a href="https://open.spotify.com/artist/2F9pvj94b52wGKs0OqiNi2"target="_blank">
-           <img class="iconfooters" src="../img/spotify-brands.svg" alt="" width="25px" height="25px">
-       </a>
-           
-       <a href="https://www.instagram.com/accounts/login/?next=/babasonicos/"target="_blank">
-           <img class="iconfooters" src="../img/instagram-brands.svg" alt="" width="25px" height="25px">
-       </a>
-             
-       <a href="https://twitter.com/babasonicos?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="_blank">
-           <img class="iconfooters" src="../img/twitter-brands.svg" alt="" width="25px" height="25px">
-       </a>           
+  <div>
+    <ul class="container-fluid d-flex justify-content-center align-items-center list-unstyled mt-2 mb-2 ">
+      <li class="d-flex">
+        <a class="container-fluid text-dark text-decoration-none text-center">BABASONICOS 2022 ©</a>
+      </li>       
+      <li>
+        <a href="https://www.youtube.com/channel/UCHkjiWuPvw76K3W4ufeuYCg" target="_blank">
+          <img class="iconfooters" src="../img/youtube-brands.svg" alt="" >
+        </a>
+      </li>
+      <li>
+        <a href="https://open.spotify.com/artist/2F9pvj94b52wGKs0OqiNi2"target="_blank">
+          <img class="iconfooters" src="../img/spotify-brands.svg" alt="" >
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/accounts/login/?next=/babasonicos/"target="_blank">
+          <img class="iconfooters" src="../img/instagram-brands.svg" alt="" >
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/babasonicos?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="_blank">
+          <img class="iconfooters" src="../img/twitter-brands.svg" alt="" >
+        </a>  
+      </li>
+      <li class="d-flex">
+        <a class= "container-fluid text-dark text-center text-decoration-none text-center" href="https://www.linkedin.com/in/alexis-calivar-812846163/"target="_blank"> <img src="../img/Logo ale.png" width="40px" height="40px"> Development by</a> 
+     </li>                               
     </ul>  
   </div>
 </footer>
