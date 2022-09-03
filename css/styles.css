@@ -210,8 +210,9 @@ label {
 }
 
 .iframeindex {
-  width: 470px;
-  height: 295px;
+  width: 570px;
+  height: 350px;
+  margin-top: 2rem;
 }
 @media screen and (max-width: 480px) {
   .iframeindex {
